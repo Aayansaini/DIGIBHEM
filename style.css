@@ -1,0 +1,22 @@
+* {
+    padding: 5px;
+    margin: 5px;
+}
+
+body {
+    background-color: #BBD6B8;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+form {
+    background-color: #000000;
+    color: #f9f9f9;
+}
+
+.Main-Box {
+    display: flex;
+    flex-direction: column;
+}
