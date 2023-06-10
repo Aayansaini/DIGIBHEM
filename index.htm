@@ -10,12 +10,14 @@
 </head>
 
 <body>
+    <!-- Navbar Section -->
     <nav>
         <h1>DIGITALBHEM</h1>
     </nav>
-    <form>
+    <form action="">
         <fieldset>
             <legend>HOTEL REGISTRATION FORM:</legend>
+            <!-- Customer Section -->
             <div class="Main-Box">
                 <div><label for="CustomerName">Customer Name :</label>
                     <input type="text" id="CustomerName">
@@ -29,23 +31,58 @@
                 <div><label for="CustomerNumber2">Total No of Persons :</label>
                     <input type="number" id="CustomerNumber2">
                 </div><br>
+                <!-- Room Section -->
                 <div>
-                    <label>Room Type : </label>
-                    <input type="radio" id="radio1">
-                    <label for="radio1">Delux Room</label>
-                    <input type="radio" id="radio2">
-                    <label for="radio2">Suite Room</label>
+                    <label for="">Room Type :</label>
+                    <select name="RoomType" id="RoomType">
+                        <option value="">Delux Room</option>
+                        <option value="">Suite Room</option>
+                    </select>
                 </div>
                 <div>
-                    <label>Amenities :</label>
-                    <input type="radio" id="radio3">
-                    <label for="radio3">AC</label>
-                    <input type="radio" id="radio4">
-                    <label for="radio4">Locker</label>
+                    <label for="">Room Type :</label>
+                    <select name="RoomType" id="RoomType">
+                        <option value="ac">AC</option>
+                        <option value="locker">Locker</option>
+                    </select>
                 </div>
+                <!-- Room Rates Section -->
+                <div><label>Room Rates:</label>
+                    <label for="Delux">Delux Room: 2500RS</label>
+                    <input type="checkbox" id="Delux">
+                    <label for="Suite">Suite Room: 4000RS</label>
+                    <input type="checkbox" id="Suite">
+                    <label for="AC">AC Room: 1000RS</label>
+                    <input type="checkbox" id="AC">
+                    <label for="locker">Locker Room: 300RS</label>
+                    <input type="checkbox" id="locker">
+                </div>
+                <!-- Advance Payment Secton -->
+                <div><label for="advanceamount">Advance Amount: </label>
+                    <input type="number" id="advanceamount">
+                </div>
+                <!-- Balance Section -->
+                <fieldset>
+                    <legend>Write Amounts Here.</legend>
+                    <label for="Balance:">Balance:</label>
+                    <label>Total Amount:</label>
+                    <input type="text" name="TotalAmount" id="TotalAmount">
+                    <label>Advance Amount:</label>
+                    <input type="text" name="AdvanceAmount" id="AdvanceAmount">
+                    <button onclick="Balancecalculation()">Check Amount</button>
+                </fieldset>
             </div>
         </fieldset>
     </form>
+    <!-- Scripting Section -->
+    <script>
+        function Balancecalculation() {
+            let box1 = document.getElementById("TotalAmount").value;
+            let box2 = document.getElementById("AdvanceAmount").value;
+            let sum = Number(box1) - Number(box2);
+            alert(sum);
+        }
+    </script>
 </body>
 
 </html>
