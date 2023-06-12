@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #BBD6B8;
+    background-color: #000000;
 }
 
 nav h1 {
@@ -19,4 +19,83 @@ form {
 .Main-Box {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.NavBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.First-Section input {
+    background-color: transparent;
+    color: #f9f9f9;
+    border: 1px solid #F29727;
+}
+
+span {
+    color: #F29727;
+}
+
+#CustomerDate {
+    width: 170px;
+}
+
+input::placeholder {
+    color: #f9f9f9;
+    opacity: 0.8;
+}
+
+.Room-Section select {
+    color: #f9f9f9;
+    border: 1px solid #F29727;
+    width: 170px;
+    background-color: transparent;
+}
+
+.Room-Section select option {
+    background-color: #000000;
+    color: #f9f9f9;
+}
+
+.Payment-Section input {
+    color: #f9f9f9;
+    border: 1px solid #F29727;
+    width: 170px;
+    background-color: transparent;
+}
+
+.RoomRates {
+    display: flex;
+    justify-content: center;
+}
+
+.RoomRates-Section1 img {
+    border-radius: 50%;
+}
+
+.RoomRates-Section2 img {
+    border-radius: 50%;
+}
+
+input[type=checkbox] {
+    font-size: 25px;
+    width: 25px;
+}
+
+#Register {
+    height: 80px;
+    font-size: 40px;
 }

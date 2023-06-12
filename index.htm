@@ -11,76 +11,90 @@
 
 <body>
     <!-- Navbar Section -->
-    <nav>
-        <h1>DIGITALBHEM</h1>
-    </nav>
+    <div class="NavBox">
+        <h1><span>BOOK</span> NOW </h1>
+        <p>Welcome To<span>Hotel</span>Book Your Luxury 🧡 </p>
+    </div>
     <form action="">
         <fieldset>
-            <legend>HOTEL REGISTRATION FORM:</legend>
+            <legend>HOTEL<span>REGISTRATION</span>FORM:</legend>
             <!-- Customer Section -->
             <div class="Main-Box">
-                <div><label for="CustomerName">Customer Name :</label>
-                    <input type="text" id="CustomerName">
-                </div><br>
-                <div><label for="CustomerDate">Check-in-Date :</label>
-                    <input type="date" id="CustomerDate">
-                </div><br>
-                <div> <label for="CustomerNumber1">Total No of Days :</label>
-                    <input type="number" id="CustomerNumber1">
-                </div><br>
-                <div><label for="CustomerNumber2">Total No of Persons :</label>
-                    <input type="number" id="CustomerNumber2">
-                </div><br>
-                <!-- Room Section -->
-                <div>
-                    <label for="">Room Type :</label>
-                    <select name="RoomType" id="RoomType">
-                        <option value="">Delux Room</option>
-                        <option value="">Suite Room</option>
-                    </select>
+                <div class="First-Section">
+                    <div><label for="CustomerName">Customer Name :</label>
+                        <input type="text" id="CustomerName" placeholder="Type Your Name">
+                    </div><br>
+                    <div><label for="CustomerDate">Check-in-Date :</label>
+                        <input type="date" id="CustomerDate">
+                    </div><br>
+                    <div> <label for="CustomerNumber1">Total No of Days :</label>
+                        <input type="number" id="CustomerNumber1" placeholder="Days">
+                    </div><br>
+                    <div><label for="CustomerNumber2">Total No of Persons :</label>
+                        <input type="number" id="CustomerNumber2" placeholder="Persons">
+                    </div><br>
                 </div>
-                <div>
-                    <label for="">Room Type :</label>
-                    <select name="RoomType" id="RoomType">
-                        <option value="ac">AC</option>
-                        <option value="locker">Locker</option>
-                    </select>
+                <!-- Room Section -->
+                <div class="Room-Section">
+                    <div>
+                        <label for="RoomType">Select Room Type :</label>
+                        <select name="RoomType" id="RoomType">
+                            <option value="Delux Room">Delux Room</option>
+                            <option value="Suite Room">Suite Room</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Amenities">Select Amenities:</label>
+                        <select name="Amenities" id="Amenities">
+                            <option value="ac">AC</option>
+                            <option value="locker">Locker</option>
+                        </select>
+                    </div>
                 </div>
                 <!-- Room Rates Section -->
-                <div><label>Room Rates:</label>
-                    <label for="Delux">Delux Room: 2500RS</label>
-                    <input type="checkbox" id="Delux">
-                    <label for="Suite">Suite Room: 4000RS</label>
-                    <input type="checkbox" id="Suite">
-                    <label for="AC">AC Room: 1000RS</label>
-                    <input type="checkbox" id="AC">
-                    <label for="locker">Locker Room: 300RS</label>
-                    <input type="checkbox" id="locker">
+                <h2>Room Rates💲</h2>
+                <div class=" RoomRates">
+                    <fieldset>
+                        <div class="RoomRates-Section1">
+                            <label for="Delux">Delux Room: 2500RS</label>
+                            <img src="./Data/pexels-charlotte-may-5825576.jpg" alt="" height="150px" width="150px">
+                            <input type="checkbox" id="Delux">
+                            <label for="Suite">Suite Room: 4000RS</label>
+                            <img src="./Data/pexels-max-rahubovskiy-6394571.jpg" alt="" height="150px" width="150px">
+                            <input type="checkbox" id="Deux">
+                        </div>
+                        <div class="RoomRates-Section2">
+                            <label for="AC">AC Room: 1000RS</label>
+                            <img src="./Data/pexels-pixabay-164595.jpg" alt="" height="150px" width="150px">
+                            <input type="checkbox" id="AC">
+                            <label for="locker">Locker Room: 300RS</label>
+                            <img src="./Data/pexels-suhel-vba-3659683.jpg" alt="" height="150px" width="150px">
+                            <input type="checkbox" id="locker150 ">
+                        </div>
+
+                    </fieldset>
                 </div>
                 <!-- Advance Payment Secton -->
-                <div><label for="advanceamount">Advance Amount: </label>
-                    <input type="number" id="advanceamount">
+                <div class=" Payment-Section"><label for="advanceamount">Advance Amount: </label>
+                    <input type="number" id="advanceamount" placeholder="Advance Amount">
                 </div>
-                <!-- Balance Section -->
-                <fieldset>
-                    <legend>Write Amounts Here.</legend>
-                    <label for="Balance:">Balance:</label>
-                    <label>Total Amount:</label>
-                    <input type="text" name="TotalAmount" id="TotalAmount">
-                    <label>Advance Amount:</label>
-                    <input type="text" name="AdvanceAmount" id="AdvanceAmount">
-                    <button onclick="Balancecalculation()">Check Amount</button>
-                </fieldset>
+                <button id="Register" onclick="Myfun()">Register</button>
             </div>
         </fieldset>
     </form>
     <!-- Scripting Section -->
     <script>
-        function Balancecalculation() {
-            let box1 = document.getElementById("TotalAmount").value;
-            let box2 = document.getElementById("AdvanceAmount").value;
-            let sum = Number(box1) - Number(box2);
-            alert(sum);
+        function Myfun(event) {
+            event.preventDefault();
+            var CustomerName = document.getElementById("CustomerName").value;
+            var CustomerName = document.getElementById("CustomerDate").value;
+            var CustomerName = document.getElementById("CustomerNumber1").value;
+            var CustomerName = document.getElementById("CustomerNumber2").value;
+            var CustomerName = document.getElementById("RoomType").value;
+            var CustomerName = document.getElementById("Amenities").value;
+            var CustomerName = document.getElementById("CustomerName").value;
+            var CustomerName = document.getElementById("CustomerName").value;
+            var CustomerName = document.getElementById("CustomerName").value;
         }
     </script>
 </body>
