@@ -1,101 +1,77 @@
 * {
-    padding: 4px;
-    margin: 4px;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: #000000;
-}
-
-nav h1 {
-    font-size: 40px;
-}
-
-form {
-    background-color: #000000;
-    color: #f9f9f9;
-}
-
-.Main-Box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+span {
+    color: crimson;
 }
 
 .NavBox {
     display: flex;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #f9f9f9;
     flex-direction: column;
     text-align: center;
-    color: #f9f9f9;
 }
 
-div {
-    margin-bottom: 10px;
-}
-
-label {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-}
-
-.First-Section input {
-    background-color: transparent;
-    color: #f9f9f9;
-    border: 1px solid #F29727;
-}
-
-span {
-    color: #F29727;
-}
-
-#CustomerDate {
-    width: 170px;
-}
-
-input::placeholder {
-    color: #f9f9f9;
-    opacity: 0.8;
-}
-
-.Room-Section select {
-    color: #f9f9f9;
-    border: 1px solid #F29727;
-    width: 170px;
-    background-color: transparent;
-}
-
-.Room-Section select option {
+.Section-Box1 {
     background-color: #000000;
     color: #f9f9f9;
 }
 
-.Payment-Section input {
-    color: #f9f9f9;
-    border: 1px solid #F29727;
-    width: 170px;
+.Container-Box1 {
     background-color: transparent;
 }
 
-.RoomRates {
+.Row-Box1 {
     display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.Row-Box1 label {
+    font-size: 17px;
+}
+
+.col-sm-2 {
+    padding: 19px;
+}
+
+/* Room Rates Working flow */
+.heading {
+    height: 150px;
+    display: flex;
+    background-color: #000000;
+    color: #f9f9f9;
     justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
-.RoomRates-Section1 img {
+.Section-Box2 {
+    background-color: #000000;
+    color: #f9f9f9;
+}
+
+.Container-Box2 {
+    background-color: transparent;
+}
+
+.Row-Box2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.Row-Box2 img {
+    padding: 20px;
     border-radius: 50%;
-}
-
-.RoomRates-Section2 img {
-    border-radius: 50%;
-}
-
-input[type=checkbox] {
-    font-size: 25px;
-    width: 25px;
-}
-
-#Register {
-    height: 80px;
-    font-size: 40px;
 }

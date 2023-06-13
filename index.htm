@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <title>_Booking Form_</title>
 </head>
 
@@ -13,74 +18,91 @@
     <!-- Navbar Section -->
     <div class="NavBox">
         <h1><span>BOOK</span> NOW </h1>
-        <p>Welcome To<span>Hotel</span>Book Your Luxury 🧡 </p>
+        <p>Welcome To <span>Hotel</span> Book Your Luxury 🧡 </p>
     </div>
-    <form action="">
-        <fieldset>
-            <legend>HOTEL<span>REGISTRATION</span>FORM:</legend>
-            <!-- Customer Section -->
-            <div class="Main-Box">
-                <div class="First-Section">
-                    <div><label for="CustomerName">Customer Name :</label>
-                        <input type="text" id="CustomerName" placeholder="Type Your Name">
-                    </div><br>
-                    <div><label for="CustomerDate">Check-in-Date :</label>
-                        <input type="date" id="CustomerDate">
-                    </div><br>
-                    <div> <label for="CustomerNumber1">Total No of Days :</label>
-                        <input type="number" id="CustomerNumber1" placeholder="Days">
-                    </div><br>
-                    <div><label for="CustomerNumber2">Total No of Persons :</label>
-                        <input type="number" id="CustomerNumber2" placeholder="Persons">
-                    </div><br>
-                </div>
-                <!-- Room Section -->
-                <div class="Room-Section">
-                    <div>
-                        <label for="RoomType">Select Room Type :</label>
-                        <select name="RoomType" id="RoomType">
-                            <option value="Delux Room">Delux Room</option>
-                            <option value="Suite Room">Suite Room</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="Amenities">Select Amenities:</label>
-                        <select name="Amenities" id="Amenities">
-                            <option value="ac">AC</option>
-                            <option value="locker">Locker</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Room Rates Section -->
-                <h2>Room Rates💲</h2>
-                <div class=" RoomRates">
-                    <fieldset>
-                        <div class="RoomRates-Section1">
-                            <label for="Delux">Delux Room: 2500RS</label>
-                            <img src="./Data/pexels-charlotte-may-5825576.jpg" alt="" height="150px" width="150px">
-                            <input type="checkbox" id="Delux">
-                            <label for="Suite">Suite Room: 4000RS</label>
-                            <img src="./Data/pexels-max-rahubovskiy-6394571.jpg" alt="" height="150px" width="150px">
-                            <input type="checkbox" id="Deux">
+    <form>
+        <!-- Customer Section -->
+        <div class="section Section-Box1">
+            <h4>HOTEL <span id="Reg">REGISTRATION</span> FORM:</h4>
+            <div class="container Container-Box1">
+                <div class="row Row-Box1">
+                    <div class="col-sm-2">
+                        <div><label for="CustomerName">Customer Name :</label>
+                            <input type="text" id="CustomerName" placeholder="Type Your Name">
                         </div>
-                        <div class="RoomRates-Section2">
-                            <label for="AC">AC Room: 1000RS</label>
-                            <img src="./Data/pexels-pixabay-164595.jpg" alt="" height="150px" width="150px">
-                            <input type="checkbox" id="AC">
-                            <label for="locker">Locker Room: 300RS</label>
-                            <img src="./Data/pexels-suhel-vba-3659683.jpg" alt="" height="150px" width="150px">
-                            <input type="checkbox" id="locker150 ">
+                    </div>
+                    <div class="col-sm-2">
+                        <div><label for="CustomerName">Customer Name :</label>
+                            <input type="date" id="CustomerDate">
                         </div>
-
-                    </fieldset>
+                    </div>
+                    <div class="col-sm-2">
+                        <div> <label for="CustomerNumber1">Total Days :</label>
+                            <input type="number" id="CustomerNumber1" placeholder="Days">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div><label for="CustomerNumber2">Total Persons :</label>
+                            <input type="number" id="CustomerNumber2" placeholder="Persons">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div>
+                            <label for="RoomType">Select Room Type :</label>
+                            <select name="RoomType" id="RoomType">
+                                <option value="Delux Room">Delux Room</option>
+                                <option value="Suite Room">Suite Room</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div>
+                            <label for="Amenities">Select Amenities:</label>
+                            <select name="Amenities" id="Amenities">
+                                <option value="ac">AC</option>
+                                <option value="locker">Locker</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <!-- Advance Payment Secton -->
-                <div class=" Payment-Section"><label for="advanceamount">Advance Amount: </label>
-                    <input type="number" id="advanceamount" placeholder="Advance Amount">
-                </div>
-                <button id="Register" onclick="Myfun()">Register</button>
             </div>
-        </fieldset>
+        </div>
+        <!-- Room Rates Section -->
+        <div class="heading">
+            <h2>Room Rates💲</h2>
+        </div>
+        <div class=" RoomRates">
+            <fieldset>
+                <div class="section Section-Box2">
+                    <div class="container Container-Box2">
+                        <div class="row Row-Box2">
+                            <div class="col-sm-3"><label for="Delux">Delux Room: 2500RS</label>
+                                <img src="./Data/pexels-charlotte-may-5825576.jpg" alt="" height="180px" width="180px">
+                                <input type="checkbox" id="Delux">
+                            </div>
+                            <div class="col-sm-3"><label for="Suite">Suite Room: 4000RS</label>
+                                <img src="./Data/pexels-max-rahubovskiy-6394571.jpg" alt="" height="180px"
+                                    width="180px">
+                                <input type="checkbox" id="Deux">
+                            </div>
+                            <div class="col-sm-3"><label for="AC">AC Room: 1000RS</label>
+                                <img src="./Data/pexels-pixabay-164595.jpg" alt="" height="180px" width="180px">
+                                <input type="checkbox" id="AC">
+                            </div>
+                            <div class="col-sm-3"><label for="locker">Locker Room: 300RS</label>
+                                <img src="./Data/pexels-suhel-vba-3659683.jpg" alt="" height="180px" width="180px">
+                                <input type="checkbox" id="locker150 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!-- Advance Payment Secton -->
+        <div class=" Payment-Section"><label for="advanceamount">Advance Amount: </label>
+            <input type="number" id="advanceamount" placeholder="Advance Amount">
+        </div>
+        <button id="Register" onclick="Myfun()">Register</button>
     </form>
     <!-- Scripting Section -->
     <script>
